@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* 공통 */
+*{margin:0; padding:0;}
+body{position: relative; top:0; left:0; z-index: 100; overflow-x: hidden;}
+.clearfix::before , .clearfix::after{ content: "";display: block;clear: both}
+a{text-decoration: none; color:#000;}
+ul, ol{list-style: none;}
+
+/* 메인화면 */
+#start-wrap{width:100%; height:100vh; background-color:#000;background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(0, 0, 0, 0.83)),url("../img2/bg_pic2.png"); background-size: cover; background-position: 0 0;}
+.text_wrap { position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
+.text_wrap p{color:#fff; font-size:6vw; font-weight:700; font-family: "Playfair Display", serif;}
+.text_wrap .star_ef1{width:5%; position: absolute; right: 25%; bottom: 33%;}
+.text_wrap .star_ef2{width:4%; position: absolute; left:-6%; top: 0;}
+.video-wrap{position: absolute; overflow:hidden; border-radius:50%;}
+.video-wrap video{width:100%; height: 100%; object-fit: cover;}
+.video1{width:300px; height:300px; top:10%; left:4%;}
+.video2{width:200px; height:200px; top:20%; right:5%;}
+.video3{width:160px; height:160px; bottom:10%; left:20%;}
+.video4{width:130px; height:130px; top:5%; left:40%;}
+.fixed-planet{position: absolute;}
+.fixed-planet img{width:100%;}
+.planet1 {right:-8%; bottom:-17%; width:40%;}
+.planet2 {right:25%; top:20%; width:12%;}
+
+/*별똥별 애니메이션*/
+.star-cont span{position: absolute; width:4px; height:4px; background: #fff; top:30%; left:30%; border-radius: 50%; box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1), 0 0 20px rgba(255,255,255,1); animation: star 3s linear infinite;}
+.star-cont span::before{content: ''; position: absolute; top:30%; transform: translateY(-30%); width:300px; height:1px; background: linear-gradient(90deg, #fff,transparent);}
+.star-cont span:nth-child(1){top:0; left:initial; right:10%; animation-delay:0; -o-animation-duration: 1s; animation-duration:1s;}
+.star-cont span:nth-child(2){top:2%; left:initial; right:0; animation-delay:0.2s; -o-animation-duration: 3s; animation-duration:3s;}
+.star-cont span:nth-child(3){top:5%; left:initial; right:0; animation-delay:0.4s; -o-animation-duration: 2s; animation-duration:2s;}
+.star-cont span:nth-child(4){top:0; left:initial; right:36%; animation-delay:0.6s; -o-animation-duration: 1.5s; animation-duration:1.5s;}
+.star-cont span:nth-child(5){top:0; left:initial; right:60%; animation-delay:0.8s; -o-animation-duration: 2.5s; animation-duration:2.5s;}
+.star-cont span:nth-child(6){top:0; left:initial; right:90%; animation-delay:1s; -o-animation-duration: 3.5s; animation-duration:3.5s;}
+@keyframes star{
+
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+    }
+    70%
+    {
+        opacity:1;
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-1000px);
+        opacity:0;
+    }
+}
+
+/* end 섹션 */
+#section1{width:100%; height:100vh; background:linear-gradient(rgba(3, 3, 3, 0.8), rgba(0, 0, 0, 0.83)),url("../img2/bg_pic2.png"); z-index: 1; position: absolute; top:107vh;}
+#section1 .end{ width:100%; height:100%; display:flex; justify-content: center; align-items: center;}
+#section1 .end span{color:#fff; font-size:6vw; font-weight:700; font-family: "Playfair Display", serif; }
+#section1 .end .bye{display:inline-block; -webkit-animation: bye 0.4s infinite alternate;-moz-animation: bye 0.4s infinite alternate;-o-animation: bye 0.4s infinite alternate;animation: bye 0.4s infinite alternate;-ms-transform-origin: 90% 100%; -webkit-transform-origin: 90% 100%;transform-origin: 90% 100%;}
+@keyframes bye {
+  0%{
+    -webkit-transform: rotateZ(5deg);
+    transform: rotateZ(5deg);
+  }
+  100%{
+    -webkit-transform: rotateZ(-5deg);
+          transform: rotateZ(-5deg );
+  }
+}
