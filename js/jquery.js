@@ -24,3 +24,11 @@ $(window).scroll(function() {
         // });
     }
 });
+
+
+$("a.ascroll").click(function(e){
+    e.preventDefault();
+    var targetSection = $(this).attr('href');
+    $('body, html').animate({scrollTop : $(targetSection).offset().top })
+
+})

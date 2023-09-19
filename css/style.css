@@ -159,7 +159,7 @@ a{color: #111; text-decoration: none;}
     display: flex;
     justify-content: center;
     align-items: center;
-    border: #b44fef solid 0.5px;
+    
     border-radius: 5%;
     
     object-fit: cover;
@@ -459,6 +459,28 @@ article.triangle:nth-child(3){
 
 
 /*물결  */
+.content{
+    height: 100%;
+}
+#myskill ul li > span{
+    width: 6.5rem;
+    
+}
+.skill_bar:after{
+    content: attr(data-per);
+    position: absolute;
+    left:0; top:0; height:100%;
+    background-color: red;
+    width: 0;
+    transition: 0.5s;
+    text-align: right;
+}
+
+.aos-animate li:first-child .skill_bar:after{   
+    width:80%;
+    transition-delay: 0.5s;
+}
+
 
 
 #myskill .content h2 {
@@ -477,7 +499,9 @@ article.triangle:nth-child(3){
 	color: #111;
 	animation: animate 3s ease-in-out infinite;
 }
+.skill{
 
+}
 @keyframes animate {
 	0%,
 	100% {
