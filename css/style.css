@@ -472,15 +472,16 @@ article.triangle:nth-child(3){
     left:0; top:0; height:100%;
     background-color: red;
     width: 0;
-    transition: 0.5s;
+    transition: 1s;
     text-align: right;
+    
 }
 
 .aos-animate li:first-child .skill_bar:after{   
-    width:80%;
-    transition-delay: 0.5s;
+    width:90%;
+    transition-delay: 1s;
 }
-
+/* 가상선택자 활용에 대하여 조금 더 공부 필요 */
 
 
 #myskill .content h2 {
