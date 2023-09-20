@@ -472,7 +472,7 @@ article.triangle:nth-child(3){
     left:0; top:0; height:100%;
     background-color: red;
     width: 0;
-    transition: 1s;
+    transition: 3s;
     text-align: right;
     
 }
@@ -481,6 +481,43 @@ article.triangle:nth-child(3){
     width:90%;
     transition-delay: 1s;
 }
+.aos-animate li:nth-child(2) .skill_bar:after{   
+    width:80%;
+    transition-delay: 1s;
+}
+.aos-animate li:nth-child(3) .skill_bar:after{   
+    width:80%;
+    transition-delay: 1s;
+}
+.aos-animate li:nth-child(4) .skill_bar:after{   
+    width:80%;
+    transition-delay: 1s;
+}
+.aos-animate li:nth-child(5) .skill_bar:after{   
+    width:60%;
+    transition-delay: 1s;
+}
+.aos-animate li:nth-child(6) .skill_bar:after{   
+    width:60%;
+    transition-delay: 1s;
+}
+.aos-animate li:nth-child(7) .skill_bar:after{   
+    width:60%;
+    transition-delay: 1s;
+}
+.aos-animate li:nth-child(8) .skill_bar:after{   
+    width:60%;
+    transition-delay: 1s;
+}
+.aos-animate li:nth-child(9) .skill_bar:after{   
+    width:70%;
+    transition-delay: 1s;
+}
+.aos-animate li:last-child .skill_bar:after{   
+    width:70%;
+    transition-delay: 1s;
+}
+
 /* 가상선택자 활용에 대하여 조금 더 공부 필요 */
 
 
@@ -498,7 +535,7 @@ article.triangle:nth-child(3){
 
 #myskill .content h2:nth-child(2) {
 	color: #111;
-	animation: animate 3s ease-in-out infinite;
+	animation: animate 4s ease-in-out infinite;
 }
 .skill{
 
