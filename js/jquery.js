@@ -31,4 +31,6 @@ $("a.ascroll").click(function(e){
     var targetSection = $(this).attr('href');
     $('body, html').animate({scrollTop : $(targetSection).offset().top })
 
-})
+});
+
+
