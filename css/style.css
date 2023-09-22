@@ -594,16 +594,16 @@ article.triangle:nth-child(3){
     align-items: center;
     justify-content: center;
     user-select: none;
-  }
+}
 
 
   /* ball 애니메이션 */
-  #texte-animation {
+#texte-animation {
     
     padding-top: 2rem;
       color:white;
-    }
-    .ball { 
+}
+.ball { 
       position: absolute;
       top: 0;  
       left: -20px;
@@ -614,7 +614,7 @@ article.triangle:nth-child(3){
       margin-left: -5px;
       transition-property: left, top;
       transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1), cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
+}
     #texte-animation p {
       position: relative; 
       margin: 0;
@@ -657,3 +657,32 @@ article.triangle:nth-child(3){
  
 
 
+@-webkit-keyframes bounce {
+        0% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+  
+  30%{
+    transform: scale(1,0.8) translate(0px, 10px); 
+  }
+
+  75%{
+    transform: scale(1,1.1) translate(0px, -25px); 
+  }
+  
+ 100% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+}
+
+.bounce:hover {
+    cursor: grab;
+      text-align:center;
+      margin:0 auto;
+      margin-top:100px;
+      
+      
+      padding:20px;  
+      
+     -webkit-animation: bounce 1s infinite;
+}
