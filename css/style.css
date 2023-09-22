@@ -578,13 +578,15 @@ article.triangle:nth-child(3){
   
   .item {
     width: 30vw;
-    height: 75vh;
+    height: 0vh;
+    padding-top: 75%;
     background-position: center;
     background-size: 75vh;
     margin: 1vw;
     border-radius: 3vw;
     display: inline-block;
     cursor: pointer;
+    
   }
   #contact {
     height: 100vh;
@@ -686,3 +688,5 @@ article.triangle:nth-child(3){
       
      -webkit-animation: bounce 1s infinite;
 }
+
+.item
