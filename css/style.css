@@ -579,7 +579,7 @@ article.triangle:nth-child(3){
   .item {
     width: 30vw;
     height: 0vh;
-    padding-top: 75%;
+    padding-top: 50%;
     background-position: center;
     background-size: 75vh;
     margin: 1vw;
@@ -596,6 +596,10 @@ article.triangle:nth-child(3){
     align-items: center;
     justify-content: center;
     user-select: none;
+}
+
+#contact .group div{
+    background-image: no-repeat;
 }
 
 
