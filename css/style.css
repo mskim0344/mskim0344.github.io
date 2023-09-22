@@ -628,3 +628,32 @@ article.triangle:nth-child(3){
       color: #88b351;
       text-shadow: 0px 0px 3px #88b351;
     }
+    #fluorescent span{
+        position:relative;
+    }
+    #fluorescent span:hover{
+        color:white;
+    }
+
+
+    #fluorescent span:before{
+        content: "";
+        position: absolute;
+        background: linear-gradient(to top, #Ff5e00 40%, transparent 40%);
+        opacity: 0.5;      
+        transform: 0.5s;
+        height: 100%;
+        left:0;
+        top:0;
+        width:0;
+        transition: 0.5s;
+
+    }
+
+    #fluorescent span:hover:before{
+        width:100%;
+    
+    }
+ 
+
+
